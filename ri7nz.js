@@ -46,7 +46,7 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
-  'black': '#22292f',
+  'grey-black': '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
@@ -55,6 +55,15 @@ let colors = {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
+
+  /**
+   * Black Color Costum from 
+   * ref : https://material.io/guidelines/style/color.html#color-themes
+   */
+
+  'black': '#303030',
+  'black-dark': '#212121',
+  'black-light': '#424242',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',

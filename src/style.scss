@@ -4,9 +4,41 @@
 * Your Style Here
 */
 
-.container {
+body {
 
-    @apply bg-blue;
+    @apply text-white bg-black;
+
+}
+
+.header {
+
+    @apply flex justify-center h-12;
+
+
+    h1 {
+
+        @apply text-5xl font-semibold;
+    
+    }
+
+}
+
+.main{
+
+    @apply h-screen;
+
+    h1 {
+    
+        @apply font-light text-sm;
+
+    }
+
+}
+
+
+.footer{
+
+    @apply flex justify-center items-center font-bold h-12 bg-white text-black;
 
 }
 
