@@ -1,0 +1,41 @@
+{
+  "name": "ri7nz.github.io",
+  "version": "1.0.0",
+  "description": "Geek, Living the day by write code with linux  and listen Rock & Metal Music, Drinking Coffe, and Sacred Geometry Enthusias",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ri7nz/ri7nz.github.io.git"
+  },
+  "keywords": [
+    "ri7nz",
+    "coders",
+    "geek",
+    "python",
+    "php",
+    "javascript",
+    "web",
+    "fullstack",
+    "devops",
+    "technology",
+    "sacred",
+    "geometry"
+  ],
+  "author": "ri7nz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ri7nz/ri7nz.github.io/issues"
+  },
+  "homepage": "https://github.com/ri7nz/ri7nz.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^0.4.0"
+  }
+}

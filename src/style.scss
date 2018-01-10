@@ -1,0 +1,15 @@
+@tailwind preflight;
+
+/**
+* Your Style Here
+*/
+
+.container {
+
+    @apply bg-blue;
+
+}
+
+@tailwind utilities;
+
+@tailwind screens;
