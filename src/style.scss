@@ -1,18 +1,30 @@
 @tailwind preflight;
 
 /**
+* Font Add
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold,medium");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:light,thin");
+
+/**
 * Your Style Here
 */
 
 body {
 
     @apply text-white bg-black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+
+    line-height: 30px;
 
 }
 
 .header {
 
-    @apply flex justify-center h-12;
+    @apply flex justify-center h-auto bg-black-dark;
 
 
     h1 {

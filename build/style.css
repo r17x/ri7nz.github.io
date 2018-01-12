@@ -6,6 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold,medium");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:light,thin");
 html {
   line-height: 1.15;
   /* 1 */
@@ -509,11 +511,18 @@ button,
   cursor: pointer; }
 
 /**
+* Font Add
+*/
+/**
 * Your Style Here
 */
 body {
   color: #ffffff;
-  background-color: #303030; }
+  background-color: #303030;
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  line-height: 30px; }
 
 .header {
   display: -webkit-box;
@@ -522,7 +531,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 3rem; }
+  height: auto;
+  background-color: #212121; }
   .header h1 {
     font-size: 3rem;
     font-weight: 600; }
