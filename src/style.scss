@@ -48,15 +48,27 @@ h1 {
 
             li {
 
-                @apply py-4 px-6  
+                @apply p-1 py-2
+
                 cursor-pointer text-grey ;
 
-                &:hover {
+                &:hover , &:focus{
 
                     @apply bg-black font-semibold tracking-wide;
                 
                 }
 
+                @screen md {
+
+                    @apply px-6 py-4;
+                
+
+                }
+
+                @screen lg {
+                
+                    @apply px-6 py-4;
+                }
 
             }
 
@@ -77,10 +89,16 @@ h1 {
 
         .darker {
 
-            @apply flex cursor-pointer w-full h-full
+            @apply flex flex-wrap cursor-pointer w-full h-full
             opacity-75 bg-black ;
 
-            &:hover {
+            @screen sm {
+                
+                @apply flex flex-wrap flex-row;
+            
+            
+            }
+            &:hover , &:focus {
             
                 @apply opacity-50;
             }
