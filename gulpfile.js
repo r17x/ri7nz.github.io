@@ -96,7 +96,7 @@ gulp.task( 'copy', () => {
     gulp.src([
         nodeModules + 'ionicons/dist/css/ionicons.min.css',
     ])
-    .pipe( gulp.dest( myGulp.buildFolder ) );
+    .pipe( gulp.dest( myGulp.buildFolder  + '/css') );
 
     console.log('Success Copy To' + myGulp.buildFolder );
 
