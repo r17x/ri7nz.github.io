@@ -1,14 +1,14 @@
 @tailwind preflight;
 
 /**
-* Font Add
-*/
+ * Font Add
+ */
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold,medium");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:light,thin");
 
 /**
-* Your Style Here
-*/
+ * Your Style Here
+ */
 
 body {
 
@@ -30,6 +30,70 @@ h1 {
     h1 {
 
         @apply text-5xl font-semibold;
+
+    }
+
+
+    .navigation {
+
+
+        @apply w-full border-b-2 border-black-light ;
+
+        ul {
+
+            @apply list-reset text-grey 
+            flex justify-center 
+            items-center font-light 
+            tracking-wide;
+
+            li {
+
+                @apply py-4 px-6  
+                cursor-pointer text-grey ;
+
+                &:hover {
+
+                    @apply bg-black font-semibold tracking-wide;
+                
+                }
+
+
+            }
+
+        }
+
+    }
+
+
+    .gagak {
+
+
+        height: 40rem;
+        
+        background-image: url('gagak.jpg') ;
+
+        @apply bg-cover bg-black w-full  ;
+
+
+        .darker {
+
+            @apply flex cursor-pointer w-full h-full
+            opacity-75 bg-black ;
+
+            &:hover {
+            
+                @apply opacity-50;
+            }
+
+            p {
+            
+                @apply tracking-wide text-xl text-justify;
+
+                line-height: 1.7rem; 
+            
+            }
+        
+        }
     
     }
 
@@ -40,7 +104,7 @@ h1 {
     @apply h-screen;
 
     h1 {
-    
+
         @apply font-light text-sm;
 
     }
