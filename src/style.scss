@@ -1,5 +1,6 @@
 @tailwind preflight;
 
+
 /**
  * Font Add
  */
@@ -139,3 +140,5 @@ h1 {
 @tailwind utilities;
 
 @tailwind screens;
+
+@import "../node_modules/ionicons/dist/css/ionicons.min.css";

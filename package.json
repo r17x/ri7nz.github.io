@@ -36,6 +36,7 @@
     "gulp-sass": "^3.1.0"
   },
   "devDependencies": {
+    "ionicons": "^3.0.0",
     "tailwindcss": "^0.4.0"
   }
 }

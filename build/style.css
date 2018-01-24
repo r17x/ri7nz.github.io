@@ -8,6 +8,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold,medium");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:light,thin");
+@import url(../node_modules/ionicons/dist/css/ionicons.min.css);
 html {
   line-height: 1.15;
   /* 1 */

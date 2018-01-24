@@ -4,6 +4,8 @@ var sass        = require(  'gulp-sass' );
 
 var postcss     = require('gulp-postcss');
 
+var path        = require(     'path'   );
+
 /**
  * Ri7nz Function
  *
@@ -72,6 +74,25 @@ gulp.task( 'style', () => {
 //on debug
 gulp.task( 'default', () => {
 
+
     gulp.watch( myGulp.sourceFolder + '/**/*.scss', ['style']);
+
+} );
+
+gulp.task( 'copy', () => {
+
+    var nodeModules = 'node_modules/'
+
+    gulp.src([
+        nodeModules + 'ionicons/dist/fonts/**/*',
+    ])
+    .pipe( gulp.dest( myGulp.buildFolder + '/fonts' ) );
+
+    gulp.src([
+        nodeModules + 'ionicons/dist/svg/**/*',
+    ])
+    .pipe( gulp.dest( myGulp.buildFolder + '/svg' ) );
+
+    console.log('Success Copy To' + myGulp.buildFolder );
 
 } );
