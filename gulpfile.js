@@ -93,6 +93,11 @@ gulp.task( 'copy', () => {
     ])
     .pipe( gulp.dest( myGulp.buildFolder + '/svg' ) );
 
+    gulp.src([
+        nodeModules + 'ionicons/dist/css/ionicons.min.css',
+    ])
+    .pipe( gulp.dest( myGulp.buildFolder ) );
+
     console.log('Success Copy To' + myGulp.buildFolder );
 
 } );
