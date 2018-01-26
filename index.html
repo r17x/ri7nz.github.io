@@ -73,6 +73,26 @@
         //container: document.getElementById('gagak'),
     }; // Your options here. See "recipes" for more information about async.
     b.appendChild(s);
+    
+    function ri7nz() {
+        this.name  = 'ri7nz';
+        this.getIG = () => {
+            return new Promise( (resolve, reject) => { 
+                return fetch ('https://www.instagram.com/ri7nz/?__a=1',(req, res) => {
+                    if ( res.status_code === 200 )
+                        return res.json();
+                    reject( 'no result from instagram' );
+                }).then( (data) => {
+                    this.result         = data;
+                    this.request_status = 'OK';
+                    resolve(data);
+                });
+            }
+        }
+    
+    };
+                               
+    console.log( new ri7nz() );
 
 }(window, document));
         </script>
@@ -125,7 +145,7 @@ function isInViewport(el){
                  window.attachEvent('on' + event, func)
                  }
                  }
-        </script>}
+        </script>
 
 
 
