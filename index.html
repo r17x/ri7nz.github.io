@@ -2,7 +2,6 @@
 <html lang="en-us">
     <head>
         <meta charset="utf8">
-
         <meta http-equiv="X-UA-Compatible" content="chrome-1">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -15,9 +14,14 @@
         <meta property="og:title" content="Ri7nz"/>
         <meta property="og:description" content="Geek, Living the day by write code with linux  and listen Rock & Metal Music, Drinking Coffe, and Sacred Geometry Enthusias"/>
         <meta property="og:type" content="website"/>
+        <meta property="og:image" content="build/gagak.jpg"/>
         <link href="build/style.css" rel="stylesheet">
+
+        <!-- Added JavaScript For LazyLoad Image -->
+        <script></script>
+
     </head>
-    <body>
+    <body id="body" class="body">
         <section class="header flex-col">
             <div id="navigation" class="navigation">
                 <ul>
@@ -36,7 +40,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="gagak">
+            <div id="gagak" class="lazy gagak" style="background-image: url('build/img/bg-loader.gif')" data-src="build/gagak.jpg">
                 <div style="" class="darker">
                     <div class="w-full md:w-1/2 lg:w-1/2 flex flex-col p-6 justify-center items-left ">
                         <h1 class="font-light text-xl mb-4">Hello! i'm rinJrz</h1>
@@ -58,6 +62,75 @@
         <section class="footer">
             Footer Area
         </section>
+        <!-- Added Javascript For Lazy Image -->
+        <script>
+(function(w, d){
+    var b = d.getElementsByTagName("body")[0]; 
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.1";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {
+        //container: document.getElementById('gagak'),
+    }; // Your options here. See "recipes" for more information about async.
+    b.appendChild(s);
+
+}(window, document));
+        </script>
+        <script>
+registerListener('load', setLazy);
+registerListener('load', lazyLoad);
+registerListener('scroll', setTimeout(lazyLoad, 10000));
+
+var lazy = [];
+
+function setLazy(){
+    lazy = document.getElementsByClassName('lazy');
+    console.log('Found ' + lazy.length + ' lazy images');
+} 
+
+function lazyLoad(){
+    for(var i=0; i<lazy.length; i++){
+        if(isInViewport(lazy[i])){
+            if (lazy[i].getAttribute('data-src')){
+                console.log(lazy[i].style);
+                lazy[i].style.backgroundImage = "url('" + lazy[i].getAttribute('data-src') + "')";
+                console.log(lazy[i].style);
+                lazy[i].removeAttribute('data-src');
+            }
+        }
+    }
+
+    cleanLazy();
+}
+
+function cleanLazy(){
+    lazy = Array.prototype.filter.call(lazy, function(l){ return l.getAttribute('data-src');});
+}
+
+function isInViewport(el){
+    var rect = el.getBoundingClientRect();
+
+    return (
+            rect.bottom >= 0 && 
+            rect.right >= 0 && 
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) && 
+                 rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+                 );
+                 }
+
+                 function registerListener(event, func) {
+                 if (window.addEventListener) {
+                 window.addEventListener(event, func)
+                 } else {
+                 window.attachEvent('on' + event, func)
+                 }
+                 }
+        </script>}
+
+
+
+        <!-- Just Add Class lazyload to an element with image -->
+
     </body>
 
 </html>

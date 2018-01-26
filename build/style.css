@@ -580,7 +580,6 @@ h1 {
             padding-bottom: 1rem; } }
   .header .gagak {
     height: 40rem;
-    background-image: url("gagak.jpg");
     background-size: cover;
     background-color: #303030;
     width: 100%; }
