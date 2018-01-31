@@ -22,7 +22,6 @@
         <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-        <script type="text/babel" src="build/js/cards.js"></script>
     </head>
     <body id="body" class="body">
         <section class="header flex-col">
@@ -60,12 +59,14 @@
             </div>
         </section>
         <section class="main">
-            <h1>Main Area</h1>
+            <div class="app">
+            </div>
         </section>
         <section class="footer">
             Footer Area
         </section>
         <!-- Added Javascript For Lazy Image -->
+        <script type="text/babel" src="build/js/cards.js"></script>
         <script>
 (function(w, d){
     var b = d.getElementsByTagName("body")[0]; 

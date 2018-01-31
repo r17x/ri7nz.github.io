@@ -19,7 +19,7 @@ class Cards extends React.Component {
 }
 
 // Get All data 
-class getInstagram extends React.Component {
+class Instagram extends React.Component {
     constructor(props) {
       super(props);
 
@@ -37,7 +37,7 @@ class getInstagram extends React.Component {
   }
   
   render(){
-    conts { user, isLoading } = this.state;
+    const { user, isLoading } = this.state;
     
     if ( isLoading ) {
       return <p> Loading... </p>;
@@ -50,7 +50,7 @@ class getInstagram extends React.Component {
 }
 ReactDOM.render(
     <div>
-      <getInstagram/>
+      <Instagram/>
     </div>,
     document.getElementById('main')
 );
