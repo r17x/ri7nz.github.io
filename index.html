@@ -18,7 +18,7 @@
         <link href="build/style.css" rel="stylesheet">
 
         <!-- Added JavaScript For LazyLoad Image -->
-        
+
         <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
@@ -66,7 +66,7 @@
             Footer Area
         </section>
         <!-- Added Javascript For Lazy Image -->
-        <script type="text/babel" src="build/js/cards.js"></script>
+        <script type="text/babel" src="build/js/Main.js"></script>
         <script>
 (function(w, d){
     var b = d.getElementsByTagName("body")[0]; 
@@ -79,60 +79,9 @@
     b.appendChild(s);
 }(window, document));
         </script>
-        <script>
-registerListener('load', setLazy);
-registerListener('load', lazyLoad);
-registerListener('scroll', setTimeout(lazyLoad, 10000));
+        <script src="build/js/LazyImage.js"></script>
 
-var lazy = [];
-
-function setLazy(){
-    lazy = document.getElementsByClassName('lazy');
-    console.log('Found ' + lazy.length + ' lazy images');
-} 
-
-function lazyLoad(){
-    for(var i=0; i<lazy.length; i++){
-        if(isInViewport(lazy[i])){
-            if (lazy[i].getAttribute('data-src')){
-                console.log(lazy[i].style);
-                lazy[i].style.backgroundImage = "url('" + lazy[i].getAttribute('data-src') + "')";
-                console.log(lazy[i].style);
-                lazy[i].removeAttribute('data-src');
-            }
-        }
-    }
-
-    cleanLazy();
-}
-
-function cleanLazy(){
-    lazy = Array.prototype.filter.call(lazy, function(l){ return l.getAttribute('data-src');});
-}
-
-function isInViewport(el){
-    var rect = el.getBoundingClientRect();
-
-    return (
-            rect.bottom >= 0 && 
-            rect.right >= 0 && 
-            rect.top <= (window.innerHeight || document.documentElement.clientHeight) && 
-                 rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-                 );
-                 }
-
-                 function registerListener(event, func) {
-                 if (window.addEventListener) {
-                 window.addEventListener(event, func)
-                 } else {
-                 window.attachEvent('on' + event, func)
-                 }
-                 }
-        </script>
-
-
-
-        <!-- Just Add Class lazyload to an element with image -->
+    <!-- Just Add Class lazyload to an element with image -->
 
     </body>
 
