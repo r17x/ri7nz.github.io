@@ -5,12 +5,9 @@ import './style.css';
 import registerServiceWorker from './registerServiceWorker';
 import 'typeface-roboto'; 
 import 'nprogress/nprogress.css'; 
-import 'ionicons/dist/css/ionicons.min.css'; 
-
-
 
 ReactDOM.render(
-        <div>
+        <div className="h-full">
             <App />
         </div>
 , document.getElementById('r00t'));

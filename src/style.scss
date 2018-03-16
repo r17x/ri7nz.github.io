@@ -32,6 +32,14 @@ body {
     @apply h-screen; 
 }
 
+.social {
+    @apply flex items-center justify-around list-reset;
+    li{
+        @apply text-white;  
+    }
+    
+}
+
 header, .header { 
 
     @apply w-full flex flex-col justify-center items-center shadow-md shadow-inner leading-tight p-6 pb-6;
@@ -65,12 +73,10 @@ header, .header {
     .nav {
         @apply w-full   border-t-2 border-b-2 border-grey-darker items-center; 
         @screen md{
-            @apply flex justify-center;
-            width: 67%; 
+            @apply flex justify-center w-2/3;
         }
         @screen lg{
-            @apply flex justify-center;
-            width: 67%; 
+            @apply flex justify-center w-2/3;
         }
         ul {
             @apply flex flex-wrap list-reset my-4 justify-between;
@@ -119,9 +125,21 @@ header, .header {
     }
 
 }
-.article {
+.pages {
     @apply flex justify-center  w-full; 
     background-color: #FFF; 
+    min-height: 25rem;
+
+    p {
+        @apply text-grey-darkest;  
+    }
+}
+.pages.instagram {
+    @apply flex-wrap; 
+    .card-img {
+        @apply bg-cover; 
+        height: 100%; 
+    }
 }
 .cards {
     @apply w-full flex flex-wrap p-2 justify-center; 
@@ -134,12 +152,19 @@ header, .header {
         @apply justify-start w-2/3; 
     }
 }
+.card-ig {
+    @apply p-2;
+    height: 13rem;
+    width: 13rem;
+}
 .card {
 
-    @apply m-2 mb-4  max-h-screen 
+    @apply m-2 mb-4
     overflow-hidden 
     flex flex-col justify-center
-    w-full border-solid border-2 border-grey-lighter; 
+    w-full border-solid border-2 border-grey-lighter
+    h-auto; 
+    max-height: 70%; 
 
     @screen md {
         @apply flex-row inline-flex;
@@ -180,6 +205,15 @@ header, .header {
     }
 
 }
-@import 'ContentPlaceholder.css'; 
+#r00t {
+@apply h-full;
+}
+footer {
+    @apply w-full flex items-center justify-center bg-black flex-col;  
+
+    .footer-content {
+        @apply w-2/3;  
+    }
+}
 @tailwind utilities;
 @tailwind screens;

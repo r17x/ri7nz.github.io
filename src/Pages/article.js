@@ -102,7 +102,7 @@ class App extends Component {
         }
         Loading.done(); 
         return (
-                <div className="article">
+                <div className="pages">
                 <CardList items={this.state.feed.items} />
                 </div>
                );

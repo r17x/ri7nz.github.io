@@ -15,23 +15,19 @@ const toText   = (content, limit=0, except=' ...') => {
 
 const Card     = (props) => {
     return (
-            <div className="border-grey-lighter border-solid"  alt={props.caption} onClick={props.onClick}>
-            <div className="card-img" 
-            style={{backgroundImage: '' }}
-            data-src={props.thumbnail_src }
-            >
-            </div>
-            <div className="card-body">
-            <div className="card-caption">
-            </div>
-            </div> 
+            <div className="card-ig" onClick={props.onClick}>
+                <div className="card-img" 
+                    style={{backgroundImage: '' }}
+                    data-src={props.thumbnail_src }
+                >
+                </div>
             </div>        
            );
 }
 
 const CardList = props => {
     return (
-            <div className="cards">
+            <div className="cards justify-around h-full">
             {props.items.map( (item,index) => <Card {...item} key={index}  /> )}
             </div> 
            );
@@ -94,8 +90,7 @@ class App extends Component {
         }
         Loading.done(); 
         return (
-                <div className="flex flex-wrap justify-center ">
-                <h3> Follow Me On Instagram <a href="//instagram.com/ri7nz/">@ri7nz</a></h3>
+                <div className="pages instagram">
                 <CardList items={this.state.feed} />
                 </div>
                );
