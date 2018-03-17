@@ -141,13 +141,13 @@ header, .header {
         height: 100%; 
     }
 }
-.pages.home{
-   @apply w-full p-4;
+.home{
+   @apply w-full p-6;
    @screen lg {
-        @apply w-2/3; 
+        @apply w-2/3 p-4;
    }
    @screen md {
-        @apply w-2/3; 
+        @apply w-2/3 p-4; 
    }
 }
 .cards {

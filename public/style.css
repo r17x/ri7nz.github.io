@@ -700,6 +700,18 @@ header .nav ul li,
   background-size: cover;
   height: 100%; }
 
+.home {
+  width: 100%;
+  padding: 1.5rem; }
+  @media (min-width: 992px) {
+    .home {
+      width: 66.66667%;
+      padding: 1rem; } }
+  @media (min-width: 768px) {
+    .home {
+      width: 66.66667%;
+      padding: 1rem; } }
+
 .cards {
   width: 100%;
   display: flex;
