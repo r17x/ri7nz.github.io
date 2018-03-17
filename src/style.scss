@@ -141,6 +141,15 @@ header, .header {
         height: 100%; 
     }
 }
+.pages.home{
+   @apply w-full p-4;
+   @screen lg {
+        @apply w-2/3; 
+   }
+   @screen md {
+        @apply w-2/3; 
+   }
+}
 .cards {
     @apply w-full flex flex-wrap p-2 justify-center; 
 

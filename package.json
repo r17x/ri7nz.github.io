@@ -20,7 +20,7 @@
     "tailwindcss": "^0.4.1",
     "typeface-roboto": "0.0.54"
   },
-  "homepage" : "https://ri7nz.github.io/",
+  "homepage": "https://ri7nz.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "production": "react-scripts build && gulp purifycss && gulp purgecss",
@@ -30,6 +30,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "glob-all": "^3.1.0",
     "purgecss-webpack-plugin": "^0.20.0"
   }

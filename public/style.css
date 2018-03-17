@@ -691,8 +691,7 @@ header .nav ul li,
   min-height: 25rem; }
 
 .pages p {
-  color: #3d4852;
-  padding: .25rem; }
+  color: #3d4852; }
 
 .pages.instagram {
   flex-wrap: wrap; }
