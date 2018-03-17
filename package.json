@@ -23,7 +23,7 @@
   "homepage" : "https://ri7nz.github.io/",
   "scripts": {
     "start": "react-scripts start",
-    "production": "react-scripts build && gulp purifycss && gulp purgecss && firebase deploy",
+    "production": "react-scripts build && gulp purifycss && gulp purgecss",
     "deploy": "firebase deploy",
     "build": "react-scripts build && gulp copy",
     "test": "react-scripts test --env=jsdom",
