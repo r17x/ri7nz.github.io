@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'; 
 import { Switch, Route } from 'react-router'; 
 
-import Articles from './Pages/article.js'; 
-import IG       from './Pages/instagram.js'; 
-import Header   from './Component/header.js'; 
-import Footer   from './Component/footer.js'; 
+import Articles from './Pages/article'; 
+import IG       from './Pages/instagram'; 
+import Header   from './Component/header'; 
+import CardLoading  from './Component/cardloading'; 
+import Footer   from './Component/footer'; 
 import Loading  from 'nprogress'; 
 import Homes    from './Pages/home'; 
 
@@ -14,6 +15,16 @@ const Article = props => {
         <div className="h-full">
         <Header/>
         <Articles/>
+        <Footer/>
+        </div>
+    );
+}
+
+const WWWID = props => {
+    return (
+        <div className="h-full">
+        <Header/>
+        <Articles uri="https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Fwwwid"/>
         <Footer/>
         </div>
     );
@@ -43,6 +54,7 @@ const Projects = props => {
     return (
      <div className="h-full">
         <Header/>
+        <CardLoading/>
         <Footer/>
     </div>     
     );
@@ -63,6 +75,7 @@ class App extends Component {
                         <Route path="/articles" exact component={Article} />
                         <Route path="/instagram" exact component={Instagram} />
                         <Route path="/projects" exact component={Projects} />
+                        <Route path="/wwwid" exact component={WWWID} />
                     </Switch>
                 </BrowserRouter>
         );

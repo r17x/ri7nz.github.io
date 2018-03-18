@@ -37,13 +37,13 @@ body {
     li{
         @apply text-white;  
     }
-    
+
 }
 
 header, .header { 
 
     @apply w-full flex flex-col justify-center items-center shadow-md shadow-inner leading-tight p-6 pb-6;
-    min-height: 8rem;  
+    min-height: 30%;
     background-color: #F2F2F2; 
 
     h1,h2,h3,h4,p {
@@ -91,22 +91,22 @@ header, .header {
                 @apply text-sm;  
             }
             @screen md{
-            li { @apply text-2xl mr-4;  }
-            li:after{
-                content: '\2205'; 
-                width: 100%;
-                position: relative;
-                right: -9%;
-            }
-            li:last-child{
-                margin-right: 0; 
-                &:after{
-                    content: '';  
+                li { @apply text-2xl mr-4;  }
+                li:after{
+                    content: '\2205'; 
+                    width: 100%;
+                    position: relative;
+                    right: -9%;
                 }
-            } 
+                li:last-child{
+                    margin-right: 0; 
+                    &:after{
+                        content: '';  
+                    }
+                } 
             }
             @screen lg{
-            li { @apply text-2xl mr-4;  }
+                li { @apply text-2xl mr-4;  }
                 li:after{
                     content: '\2205'; 
                     width: 100%;
@@ -128,7 +128,7 @@ header, .header {
 .pages {
     @apply flex justify-center  w-full; 
     background-color: #FFF; 
-    min-height: 25rem;
+    min-height: 60%; 
 
     p {
         @apply text-grey-darkest;  
@@ -142,13 +142,13 @@ header, .header {
     }
 }
 .home{
-   @apply w-full p-6;
-   @screen lg {
+    @apply w-full p-6;
+    @screen lg {
         @apply w-2/3 p-4;
-   }
-   @screen md {
+    }
+    @screen md {
         @apply w-2/3 p-4; 
-   }
+    }
 }
 .cards {
     @apply w-full flex flex-wrap p-2 justify-center; 
@@ -205,7 +205,7 @@ header, .header {
         .card-caption { @apply text-grey-darker text-base font-light; }
 
     }
-
+    
     .card-footer{
 
         @apply px-6 py-4;
@@ -215,7 +215,7 @@ header, .header {
 
 }
 #r00t {
-@apply h-full;
+    @apply h-full;
 }
 footer {
     @apply w-full flex items-center justify-center bg-black flex-col;  
@@ -223,6 +223,7 @@ footer {
     .footer-content {
         @apply w-2/3;  
     }
+    
 }
 @tailwind utilities;
 @tailwind screens;

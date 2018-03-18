@@ -15,7 +15,7 @@ const Header = props => {
                 <li><NavLink to="/articles">Article</NavLink></li>
                 <li><NavLink to="/instagram">Instagram</NavLink></li>
                 <li><NavLink to="/projects">Projects</NavLink></li>
-                <li><NavLink to="/wwid">WWWID</NavLink></li>
+                <li><NavLink to="/wwwid">WWWID</NavLink></li>
                 </ul>
                 </div>
                </header>

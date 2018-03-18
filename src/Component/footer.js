@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from 'react-ionicons'; 
+import Icon  from 'react-ionicons'; 
 
 const color = 'white',
       fSize = '30px';
@@ -44,25 +44,27 @@ const logoList = [
         color: '#CF649A',
     },
 ];
+
 const IconList = props => {
-   return (
-     <li>
-        <a href={props.uri} rel="noopener" target="_blank">
+    return (
+        <li keys>
+        <a href={props.uri} rel="noopener" target="_blank" alt={props.uri}>
         <Icon {...props}></Icon>
         </a>
-     </li>     
+        </li>     
     ); 
 }
+
 const Footer = () => {
     return (
         <footer>
         <div className="footer-content"> 
         <ul className="social my-4">
-        { logoList.map( logo => <IconList {...logo} /> ) }   
+        { logoList.map( (logo, index)  => <IconList {...logo} key={index} /> ) }   
         </ul>
         </div>
         </footer>
-           );
+    );
 }; 
 
 export default Footer; 

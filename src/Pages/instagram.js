@@ -1,17 +1,8 @@
 import React, 
        { Component } from 'react';
 import Lazy          from '../Component/Lazy';
+import CardLoading   from '../Component/cardloading';
 import Loading  from 'nprogress'; 
-
-const toText   = (content, limit=0, except=' ...') => {
-    content     = content.split(/<\s*p[^>]*>([^<]*)<\s*\/\s*p\s*>/);
-    content     = content.filter((v) => {
-        return v.length > 100; 
-    });
-
-    content   = content[0].replace(/<[^>]+>/g, '');
-    return content.substring(0,limit) + except;
-}
 
 const Card     = (props) => {
     return (
@@ -42,18 +33,9 @@ class App extends Component {
     }  
 
     fetchCache(){
-        let url     =  window.location.origin + '/ig.ri7nz.json';
-        let cacheKey = url;
-        let cached   = sessionStorage.getItem(cacheKey);
-
+            let url     =  window.location.origin + '/ig.ri7nz.json';
         return fetch(url).then((res) => {
-            if (res.status === 200) {
-                res.clone().text().then(content => {
-                    sessionStorage.setItem(cacheKey, content); 
-                }) 
-            }
             return res.json();
-
         }).then((json) => {
             this.setState({
                 feed: json.user.media.nodes, 
@@ -76,24 +58,15 @@ class App extends Component {
     render() {
         if(! this.state.isLoaded ){
             return (
-                    <div className="card"  alt="Loading content ...">
-                    <div className="card-img" >
-                    </div>
-                    <div className="card-body">
-                    <h1 className="card-title bg-blue-dark text-blue-dark">wkwkwkwkwkwkwkkw</h1>
-                    <div className="text-blue-dark bg-blue-dark card-caption">
-                    {'wk'.repeat(170)}
-                    </div>
-                    </div> 
-                    </div>        
-                   );
+                <CardLoading/>
+            );
         }
         Loading.done(); 
         return (
                 <div className="pages instagram">
                 <CardList items={this.state.feed} />
                 </div>
-               );
+        );
     }
 }
 

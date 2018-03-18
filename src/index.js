@@ -7,9 +7,7 @@ import 'typeface-roboto';
 import 'nprogress/nprogress.css'; 
 
 ReactDOM.render(
-        <div className="h-full">
             <App />
-        </div>
 , document.getElementById('r00t'));
 
 registerServiceWorker();

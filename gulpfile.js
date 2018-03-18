@@ -34,7 +34,7 @@ var purgecss    = require('gulp-purgecss');
  * pada source berdasarkan extensi                              *
  ***************************************************************/
 var source      = 'src',
-    build       = 'public',
+    build       = 'src',
     configname  = 'ri7nz',
     watchList   = (action, list=[]) => {
         if (  list.length  <= 0 ){
@@ -52,18 +52,9 @@ var source      = 'src',
         list.map((ext) => {
             gulp.watch( `${source}/**/*.${ext}`, action);
         });
+        return;
 };
 
-
-gulp.task('copy', () => {
-    var nodeModules  = 'node_modules',
-        listCopy     = ['svg', 'fonts'];
-    listCopy.map( l => {
-        gulp.src([
-            `${nodeModules}/ionicons/dist/${l}/**/*`
-        ]).pipe(gulp.dest(`build/${l}`));
-    });
-});
 /****************************************************************
  *     $ gulp style # untuk menjalankan fungsi dibawah ini      *
  ***************************************************************/

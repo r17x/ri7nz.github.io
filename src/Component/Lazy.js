@@ -5,4 +5,5 @@ const Lazy = () => {
                     img.style.opacity = 100; 
                 });
 }
+
 export default Lazy;
