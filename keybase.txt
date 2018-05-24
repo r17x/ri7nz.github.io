@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/ri7nz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rin.rocks
+  * I am ri7nz (https://keybase.io/ri7nz) on keybase.
+  * I have a public key with fingerprint 0D90 1AC7 E602 769C 69B6  2A24 1ADA 7B78 DD1F 9F90
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012039a47ac0493363ffe77e9bb26b89ed724689e71d2caa0801573337dc8dc0b3d50a",
+      "fingerprint": "0d901ac7e602769c69b62a241ada7b78dd1f9f90",
+      "host": "keybase.io",
+      "key_id": "1ada7b78dd1f9f90",
+      "kid": "010112f1cc46d6911cba6384e79fc571d94be4c04a0cd09e1d5c0bac268a29edfc330a",
+      "uid": "ac1a31135739e25821734ab032fe2219",
+      "username": "ri7nz"
+    },
+    "service": {
+      "hostname": "rin.rocks",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1527139885,
+  "expire_in": 157680000,
+  "prev": "204a9290f95a8ce3d73b0b4679c291265fe42e54da49404193fb9e9fbfee8388",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMNtAnicbVJrTBRXGF0QsSIVJGjbDQ8dpAnh4czc2Zm5SGgTCAI2lgZaMErWOzN3
+cAruLrvDikWxBrNtqUERUVQMbdCCKI+lVEPAKgRICQbSkGrB8pBQCbYCJrRgEdpZ
+Uvur98+X+91zzj3ny9f1+hqdl5t+uCB/JLjqjFtfR2mebp/nnsgCQjBLR4joAiIb
+rxacI2GbasxWJCKaICmaBBAxHBJJBgLAAlnGHIehINCswEMscTTDapWjJFpEiORJ
+ysABADhJ5CWRFIBkIBERQciKKQtbLVbFpLpkJUhSSOQwS9IcC0UWCiyNaIZCEuIE
+jpckSoYyJDXiQbPNxdDMCciGoxSz1tMuxlV7/4N/5ZukKFqmRJFhJRZSlCggFvAM
+5qAsGjSzkBEwo2VCpCiREFOSQTOLRJrlEa2lkkUAVn3nrcohkUKAooAWDWLawNMU
+BxgkkICWMU1T0AW0YasJHcIa2qpwpk+IYxGE1rIrInZN1RXjv2dTlNUsZts0lsVq
+Vs2iOUdrH1RViy3aRVOPWFy4w1gw/qtgFBSTpE1QY9ix1aaYTUQ0pSFFVXFJUgaa
+owDkeUMEgfMtihUbFRfCwLE8qR3XP9iuSdJaYEhDUoYGxIsYSBwQSIFhOSjSkKJZ
+g4wZGhsYCTGQIRkKAlmAGMqCjDEPeJ5wZco1mYloVrOJsjRJm5JlQmqeFRPHOjv2
+e+jcvHSea91dm6XzWu/7at+YWz4r1GjolVCwq0H/xJcZ29peu3Ij6c33ancf/3po
+jY/z4wdDu3pwYo+jMEv/+FEvKJhfP6W+1ndWrPzJo9ntt83rZpc3+Hxb7t3eE77Q
+dWfjyZjpwHeP2ssduUbrxn2n8svGiFPchjRHsRL3su7hlq/SG39d3j69/6PUbabq
+oOKZ6gzbp7Hxcbufds+XdP91YPFMxc22kKK5iJTAh8lXTw8+Pj6Do/5sOtc0Fz7a
+37oH/fj5W4Hi5A8DExNBY3nusa3nlXSixWJzZmD4QZLxss78fkiNR27LGyuWooCU
+LzvfZpY9nN3lSc+FwEqYoCuuqFx38m6wM36mYWv9xYa1/sPbQCas+j2g7kBb/Yif
+PigxtPyPkbtNsax6/pctdbW3w/5OvGG8f+deSVn10ednySF05fCkNDg5kCzsPMQ2
+dIy+HPvGt0x1j+9ODUgI79r7bPGyPXl7Yc/s1PjTF9YnC5HpbcOXBsmEsODez24t
+pUgDFUGlydPqhXPE/AlnxkLj/KXCOL++7ttpMXilPu/B0t4Pg0suZDWSjrQXjrCg
+a2WCI3FTiE1uXqq5dn1xYVmX+Sw13K9Fz9ZkvvPoRHsOitnUWHV1x2zlF9957Nw4
+7tjRi683dNyLaQeT3stktX6ir7m3fSXyYs9pz6ngzpySQiXyZ29nqf/N8f6+crta
+lNF6v3Tz3Pf+/f8ASWfE/g==
+=rCM9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ri7nz
+
+==================================================================
